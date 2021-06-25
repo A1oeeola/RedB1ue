@@ -1,0 +1,198 @@
+<html>
+<head>
+    <style>
+        body {
+            background: url(https://images.pexels.com/photos/1831234/pexels-photo-1831234.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+            background-position: center;
+            background-size: cover;
+           
+        }
+		  
+  
+    </style>
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text&family=Big+Shoulders+Stencil+Text:wght@300&family=Comfortaa:wght@700&family=Fira+Sans+Extra+Condensed:wght@300&family=Play&family=Poiret+One&family=Poppins:wght@100;200;300&family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+	<script src="js/jquery-3.6.0.min.js"></script>
+<body onload="time">
+
+
+
+<div class="container">
+    <br class="asd">
+        <a class="logo2" href="Новый текстовый документ (2).html">redblue</a>
+        <br></br>
+		
+		<div class="table-responsive">
+    <table>
+        <caption class="qw">Цены на интерьерную визуализацию</caption>
+        <tr>
+            <th>Услуга</th>
+            <th>Цена</th>
+
+        </tr>
+        <tr><td>Моделирование и визуализация одного помещения по техзаданию заказчика (дневной свет)</td><td>7000 руб.</td></tr>
+        <tr><td>Моделирование и визуализация одного помещения по техзаданию заказчика (вечерний свет)</td><td>9000 руб.	</td></tr>
+        <tr><td>Дополнительные изменения (переделки, доделки) планировки, мебели, текстур, материалов после выполнения визуализации по техзаданию заказчика</td><td>200 руб. за 1 изменение	</td></tr>
+        <tr><td>Дополнительная визуализация для выполняемого (текущего) проекта</td><td>800 руб.</td></tr>
+        <tr><td>Срочная работа, работа в выходные и праздничные дни</td><td>наценка 30-50%	</td></tr>
+
+        <table/>
+        <br></br>
+
+
+        <div class="elprimo">
+            <div class="view view-first">
+                <img src="эль2.jpg" />
+                <div class="mask">
+                    <h2>Лучшая 3D визуализация</h2>
+                    <p>Узнать подробнее о полной информации можно по ссылке снизу  </p>
+                    <a href="#" class="info">Подробнее...</a>
+                </div>
+            </div> 
+        </div>
+           
+
+
+        
+
+
+        <table>
+            <caption class="qw">Цены на экстерьерную визуализацию</caption>
+            <tr>
+                <th>Услуга</th>
+                <th>Цена</th>
+        <tr><td>Моделирование и визуализация одного здания с одним проработанным фасадом с минимальным окружением (дневной свет)</td><td>6000 руб.</td></tr>
+        <tr><td>Моделирование и визуализация одного здания с одним проработанным фасадом с минимальным окружением (вечерний свет)</td><td>8000 руб.</td></tr>
+        <tr><td>Моделирование и визуализация одного здания с двумя (и более) проработанными фасадами с минимальным окружением (дневной свет)</td><td>от 10000 руб. в зависимости от площади</td></tr>
+        <tr><td>3D моделирование окружения (газоны, растительность, площадки, парковки и т.п.)</td><td>10000 руб.	</td></tr>
+        <tr><td>Визуализация готовой 3D модели в окружении (дневной свет)</td><td>8000 руб.</td></tr>
+        <tr><td>Визуализация готовой 3D модели в окружении (вечерний свет)</td><td>от 4000 руб.</td></tr>
+
+    </table>
+	<br>
+	<br>
+	<br>
+	<br>
+	</div>
+	<div class='dd'>
+	  <p id="train">ЗДЕСЬ БУДЕТ РЕКЛАМА<p> 
+</div>
+
+  <script src='js.js'> </script>
+  <br>
+  <br>
+  <br>
+  
+  
+  
+  <script>
+	$(function(){
+	// предварительная загрузка изображений
+	varklgd = $('<img />').attr('src','klngr.png');
+	varmsk = $('<img />').attr('src','msk.png');
+	varspb = $('<img />').attr('src','spb.png');
+			
+	$('div#imap> a').click(function(event){
+		varelId = $(this).attr('id');
+			
+		switch(elId){
+			 case 'klgd' :
+				$('#container:not(:has(img))').append(klgd);
+				//elImgURI = img_props.klgd.uri;
+			 break;
+			 case 'spb' :
+				$('#container:not(:has(img))').append(spb);
+				//elImgURI = img_props.spb.uri;
+			 break; 
+			 case 'msk' :
+				$('#container:not(:has(img))').append(msk);
+				//elImgURI = img_props.msk.uri;
+			 break;	
+			 default: elImgURI = false;
+		}
+		
+		// ширинаконтейнера
+		varcontwidth = $('#container').width();
+		varcontheight = $('#container').height();
+		
+		varw_mrg = contwidth/2 + "px";
+		varh_mrg = contheight/2 + "px";
+	
+		$('#container').show();
+		$('#container').css({'margin-left':'-'+w_mrg});
+		event.preventDefault();
+	});
+	$('div#container').click(function(event){
+		$('#container img').remove();
+		$('#container').hide();
+		event.preventDefault();
+	});
+	
+	});
+	
+</script>
+
+<br>
+<br>
+<br>
+
+
+<body>
+    <script type="text/javascript">
+
+    let click = 0;
+    function hello() {
+        click += 1;
+		const clicks = document.getElementById("clicks");
+		const btn = document.querySelector(".button");
+        
+		clicks.innerHTML = click;
+		btn.addEventListener("click", () => {
+			clicks.style.fontSize = "50px";
+			
+			setTimeout( ()=> {
+				clicks.style.fontSize = "24px";
+				clicks.innerHTML = click;
+			}, 500)
+		})
+		
+
+    };
+    </script>
+    <button class="gradient-button button" type="button" onclick="hello()">Отправить</button>
+    <p>Заявок: <a id="clicks"></a></p>
+
+</body>
+
+
+
+<body>
+	<div id="imap">
+		<a href="#" id="klgd">Калининград</a>
+		<a href="#" id="spb">Санкт-Петербург</a>
+		<a href="#" id="msk">Москва</a>
+	</div>
+	<div id="container"></div>
+	</body>
+
+
+  
+</div>
+
+
+
+<div id="container"></div>
+
+
+
+</div>
+</head>
+</body>
+</html>
